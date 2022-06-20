@@ -1,0 +1,79 @@
+
+h1 {
+    @apply text-black text-3xl m-3
+}
+
+.navbar {
+    @apply bg-black h-16 w-full flex text-center justify-center items-center
+}
+.navbar-items{
+    @apply text-white flex gap-6 
+}
+.logo {
+    @apply text-white uppercase mr-28 cursor-pointer
+}
+ a {
+    @apply hover:text-gray-500 transition-all
+}
+
+.form-container {
+    @apply items-center justify-center text-center mt-10 border-2 w-[40%] rounded-md 
+}
+
+.submit-btn {
+    @apply text-white bg-black p-2 rounded-md m-6 hover:bg-slate-400 hover:text-black transition-all
+}
+
+.input-text{
+    @apply border-2 outline-none pl-1 rounded-md 
+}
+
+select {
+    @apply bg-black text-white w-4 ml-4 outline-none text-center 
+}
+
+.btn-logout {
+    @apply bg-slate-500 text-white p-1 ml-6 cursor-pointer rounded-md hover:bg-slate-300 hover:text-black transition-all
+}
+
+
+ 
+  .spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    
+    & .path {
+      stroke: hsl(210, 70, 75);
+      stroke-linecap: round;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+    
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+  
