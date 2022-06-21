@@ -23,6 +23,9 @@ h1 {
 .submit-btn {
     @apply text-white bg-black p-2 rounded-md m-6 hover:bg-slate-400 hover:text-black transition-all
 }
+.delete-btn {
+  @apply text-white bg-red-700 p-2 cursor-pointer rounded-md m-6 hover:bg-red-500 hover:text-white transition-all
+}
 
 .input-text{
     @apply border-2 outline-none pl-1 rounded-md 
